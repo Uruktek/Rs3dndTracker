@@ -11,6 +11,7 @@ class_ = "table-bg-grey"  # TODO: Add green to check as well.
 responseFromSinkholes = requests.get(
     url="https://runescape.wiki/w/Sinkholes",
 )
+
 # print(response.status_code)
 
 # grabbing the htlp content from the site
