@@ -21,13 +21,10 @@ while True:
             tableValueSinkholes = soupSinkholes.find("td", tableColor)
 
             # print(type(tableValueSinkholes))
-            if tableValueSinkholes is None:
-                print('beep')
-            # FIXME: RESOLVE THE LOOP SO THIS CAN ACTUALL WORK
-
-            # # This block extracts the number of mins from the site.
-            # minsFromSite = []
-            # for word in tableValueSinkholes.string.split():
-            #     if word.isdigit():
-            #         minsFromSite.append(int(word))
-            # print(minsFromSite)
+            if tableValueSinkholes is not None:
+                # This block extracts the number of mins from the site.
+                minsFromSite = []
+                for word in tableValueSinkholes.string.split():
+                    if word.isdigit():
+                        minsFromSite.append(int(word))
+                print(minsFromSite)
