@@ -1,0 +1,14 @@
+{
+  "name": "dndtrack",
+  "version": "1.0.0",
+  "description": "tracker for dnds in rs3",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "author": "cleedom",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^18.2.0"
+  }
+}
